@@ -1,6 +1,6 @@
 import functools
 
-from eth_utils import (
+from ..eth_utils import (
     compose,
 )
 

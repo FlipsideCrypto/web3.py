@@ -2,7 +2,7 @@ from __future__ import absolute_import
 
 import getpass
 
-from eth_utils import (
+from .eth_utils import (
     coerce_return_to_text,
     remove_0x_prefix,
     encode_hex,

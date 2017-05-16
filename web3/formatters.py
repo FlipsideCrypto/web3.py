@@ -4,7 +4,7 @@ import warnings
 import functools
 import operator
 
-from eth_utils import (
+from .eth_utils import (
     coerce_args_to_text,
     coerce_return_to_text,
     is_address,

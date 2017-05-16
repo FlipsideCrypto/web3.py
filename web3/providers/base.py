@@ -3,7 +3,7 @@ from __future__ import absolute_import
 import json
 import itertools
 
-from eth_utils import (
+from ..eth_utils import (
     force_bytes,
     force_obj_to_text,
     force_text,

@@ -1,6 +1,6 @@
 import hashlib
 
-from eth_utils import (
+from ..eth_utils import (
     is_boolean,
     is_null,
     is_dict,

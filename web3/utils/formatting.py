@@ -1,4 +1,4 @@
-from eth_utils import (
+from ..eth_utils import (
     force_bytes,
     force_text,
     is_bytes,

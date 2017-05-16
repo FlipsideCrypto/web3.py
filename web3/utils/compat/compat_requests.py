@@ -1,6 +1,6 @@
 import requests
 
-import pylru
+from ...pylru import pylru
 
 from web3.utils.caching import generate_cache_key
 

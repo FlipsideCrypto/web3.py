@@ -1,6 +1,6 @@
 from __future__ import absolute_import
 
-from eth_utils import (
+from .eth_utils import (
     to_wei,
     from_wei,
     is_address,

@@ -10,7 +10,7 @@ try:
 except ImportError:
     JSONDecodeError = ValueError
 
-from eth_utils import (
+from ..eth_utils import (
     force_text,
 )
 

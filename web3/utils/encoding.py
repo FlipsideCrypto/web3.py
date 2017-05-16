@@ -3,7 +3,7 @@ import json
 
 from rlp.sedes import big_endian_int
 
-from eth_utils import (
+from ..eth_utils import (
     is_string,
     is_boolean,
     is_dict,

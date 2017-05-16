@@ -1,7 +1,7 @@
 import itertools
 import re
 
-from eth_utils import (
+from ..eth_utils import (
     coerce_args_to_bytes,
     coerce_args_to_text,
     coerce_return_to_text,

@@ -4,7 +4,7 @@ import rlp
 from rlp.sedes import big_endian_int, binary, Binary
 from rlp.utils import int_to_big_endian
 
-from eth_utils import (
+from ..eth_utils import (
     decode_hex,
     force_bytes,
     coerce_args_to_bytes,

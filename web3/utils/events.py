@@ -1,6 +1,6 @@
 import itertools
 
-from eth_utils import (
+from ..eth_utils import (
     encode_hex,
     to_tuple,
     is_list_like,

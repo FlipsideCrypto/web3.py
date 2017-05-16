@@ -1,7 +1,7 @@
 import json
 import uuid
 
-from eth_utils import (
+from ..eth_utils import (
     force_text,
     is_dict,
     is_string,

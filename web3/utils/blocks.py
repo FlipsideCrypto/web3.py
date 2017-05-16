@@ -1,4 +1,4 @@
-from eth_utils import (
+from ..eth_utils import (
     is_string,
     force_text,
 )

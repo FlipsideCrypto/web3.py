@@ -2,7 +2,7 @@ import logging
 
 from .base import JSONBaseProvider  # noqa: E402
 
-from eth_utils import (
+from ..eth_utils import (
     to_dict,
 )
 

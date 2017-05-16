@@ -1,7 +1,7 @@
 import re
 import random
 
-from eth_utils import (
+from ..eth_utils import (
     is_string,
     is_list_like,
 )
