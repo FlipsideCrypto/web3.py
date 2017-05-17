@@ -1,5 +1,7 @@
 # Web3.py (Google Appengine Fork)
 
+### DOES NOT WORK ON APPENGINE AT THE MOMENT
+
 Web3.py package to use in [Google Appengine](https://cloud.google.com/appengine/docs/python/)
 
 Included packages:
