@@ -1,11 +1,11 @@
-from web3 import formatters
-from web3.utils.encoding import (
+from ..web3 import formatters
+from .utils.encoding import (
     to_decimal,
 )
-from web3.utils.functional import (
+from .utils.functional import (
     apply_formatters_to_return,
 )
-from web3.utils.filters import (
+from .utils.filters import (
     ShhFilter,
 )
 

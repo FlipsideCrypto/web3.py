@@ -1,7 +1,7 @@
-from web3.utils.functional import (
+from .utils.functional import (
     apply_formatters_to_return,
 )
-from web3.utils.encoding import (
+from .utils.encoding import (
     to_decimal,
 )
 

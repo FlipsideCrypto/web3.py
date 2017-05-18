@@ -10,11 +10,11 @@ from gevent import (  # noqa: F401
     threading,
 )
 
-import pylru
+from ...pylru import pylru
 
 from geventhttpclient import HTTPClient
 
-from web3.utils.six import urlparse
+from ...utils.six import urlparse
 
 
 _client_cache = pylru.lrucache(8)

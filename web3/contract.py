@@ -5,7 +5,7 @@ import functools
 import warnings
 import itertools
 
-from eth_utils import (
+from .eth_utils import (
     is_address,
     function_abi_to_4byte_selector,
     encode_hex,
@@ -18,20 +18,20 @@ from eth_utils import (
     is_list_like,
 )
 
-from eth_abi import (
+from .eth_abi import (
     encode_abi,
     decode_abi,
 )
-from eth_abi.exceptions import (
+from .eth_abi.exceptions import (
     EncodingError,
     DecodingError,
 )
 
-from web3.exceptions import (
+from .exceptions import (
     BadFunctionCallOutput,
 )
 
-from web3.utils.abi import (
+from .utils.abi import (
     filter_by_type,
     filter_by_name,
     filter_by_argument_count,
@@ -44,19 +44,19 @@ from web3.utils.abi import (
     normalize_return_type,
     check_if_arguments_can_be_encoded,
 )
-from web3.utils.decorators import (
+from .utils.decorators import (
     combomethod,
 )
-from web3.utils.empty import (
+from .utils.empty import (
     empty,
 )
-from web3.utils.events import (
+from .utils.events import (
     get_event_data,
 )
-from web3.utils.exception import (
+from .utils.exception import (
     raise_from,
 )
-from web3.utils.filters import (
+from .utils.filters import (
     construct_event_filter_params,
     PastLogFilter,
 )

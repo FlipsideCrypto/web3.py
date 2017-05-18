@@ -1,5 +1,5 @@
 def construct_user_agent(class_name):
-    from web3 import __version__ as web3_version
+    from ...web3 import __version__ as web3_version
 
     user_agent = 'Web3.py/{version}/{class_name}'.format(
         version=web3_version,

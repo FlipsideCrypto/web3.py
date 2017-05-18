@@ -7,7 +7,7 @@ from ..eth_utils import (
     is_string,
 )
 
-from web3.utils.compat import (
+from ..utils.compat import (
     spawn,
 )
 

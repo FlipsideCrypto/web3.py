@@ -8,6 +8,18 @@ Included packages:
 
 * [pylru](https://github.com/mozilla/positron/blob/master/python/pylru/pylru.py)
 * [ethereum-utils](https://github.com/pipermerriam/ethereum-utils)
+* [ethereum-abi-utils](https://github.com/pipermerriam/ethereum-abi-utils/tree/master/eth_abi)
+* [CompactFIPS202](https://github.com/gvanas/KeccakCodePackage/blob/master/Standalone/CompactFIPS202-Python/CompactFIPS202.py) 
+* [pyrlp](https://github.com/ethereum/pyrlp)
+
+*Note* : pysha3 was replaced by CompactFIPS202 because pysha3 uses C components which are not supported on GAE. Test before doing production code.
+
+
+#### Tested
+
+* Personal API
+* Eth API
+
 
 ====================================
 

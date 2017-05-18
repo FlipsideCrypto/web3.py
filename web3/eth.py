@@ -6,31 +6,31 @@ from eth_utils import (
     coerce_return_to_text,
 )
 
-from web3 import formatters
-from web3.iban import Iban
+import formatters
+from .iban import Iban
 
-from web3.contract import (
+from .contract import (
     Contract,
 )
 
-from web3.utils.blocks import (
+from .utils.blocks import (
     is_predefined_block_number,
 )
-from web3.utils.empty import (
+from .utils.empty import (
     empty,
 )
-from web3.utils.encoding import (
+from .utils.encoding import (
     to_decimal,
 )
-from web3.utils.filters import (
+from .utils.filters import (
     BlockFilter,
     TransactionFilter,
     LogFilter,
 )
-from web3.utils.functional import (
+from .utils.functional import (
     apply_formatters_to_return,
 )
-from web3.utils.transactions import (
+from .utils.transactions import (
     get_buffered_gas_estimate,
 )
 

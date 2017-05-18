@@ -6,13 +6,13 @@ from ..eth_utils import (
     to_dict,
 )
 
-from web3.utils.six import (
+from ..utils.six import (
     urlunparse,
 )
-from web3.utils.compat import (
+from ..utils.compat import (
     make_post_request,
 )
-from web3.utils.http import construct_user_agent
+from ..utils.http import construct_user_agent
 
 
 logger = logging.getLogger(__name__)

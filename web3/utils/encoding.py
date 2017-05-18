@@ -1,7 +1,7 @@
 # String encodings and numeric representations
 import json
 
-from rlp.sedes import big_endian_int
+from ..rlp.sedes import big_endian_int
 
 from ..eth_utils import (
     is_string,
@@ -17,6 +17,8 @@ from ..eth_utils import (
 from .formatting import (
     is_prefixed,
 )
+
+import struct
 
 
 @coerce_args_to_text

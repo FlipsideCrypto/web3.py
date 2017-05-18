@@ -21,16 +21,16 @@ from .eth_utils import (
     to_normalized_address,
 )
 
-from web3.iban import Iban
+from .iban import Iban
 
-from web3.utils.empty import (
+from .utils.empty import (
     empty,
 )
-from web3.utils.encoding import (
+from .utils.encoding import (
     from_decimal,
     to_decimal,
 )
-from web3.utils.blocks import (
+from .utils.blocks import (
     is_predefined_block_number,
 )
 

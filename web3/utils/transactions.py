@@ -1,8 +1,8 @@
 import random
 
-import rlp
-from rlp.sedes import big_endian_int, binary, Binary
-from rlp.utils import int_to_big_endian
+from ..rlp import encode, Serializable, decode
+from ..rlp.sedes import big_endian_int, binary, Binary
+from ..rlp.utils import int_to_big_endian
 
 from ..eth_utils import (
     decode_hex,
@@ -84,7 +84,7 @@ TT256 = 2 ** 256
 address_sedes = Binary.fixed_length(20, allow_empty=True)
 
 
-class Transaction(rlp.Serializable):
+class Transaction(Serializable):
     """
     # Derived from `pyethereum.transaction.Transaction`
 
@@ -153,7 +153,7 @@ class Transaction(rlp.Serializable):
                 )
                 if has_invalid_signature_values:
                     raise ValueError("Invalid signature values!")
-                rlpdata = rlp.encode(self, UnsignedTransaction)
+                rlpdata = encode(self, UnsignedTransaction)
                 rawhash = keccak(rlpdata)
 
                 pk = PublicKey(flags=ALL_FLAGS)
@@ -208,7 +208,7 @@ class Transaction(rlp.Serializable):
         if key in (0, b'', b'\x00' * 32, b'0' * 64):
             raise ValueError("Zero privkey cannot sign")
 
-        rawhash = keccak(rlp.encode(self, UnsignedTransaction))
+        rawhash = keccak(encode(self, UnsignedTransaction))
 
         if len(key) in {64, 66}:
             # we need a binary key
@@ -239,11 +239,11 @@ def serialize_transaction(transaction):
         value=to_decimal(transaction['value']),
         data=decode_hex(transaction['data']),
     )
-    return rlp.encode(unsigned_transaction, UnsignedTransaction)
+    return encode(unsigned_transaction, UnsignedTransaction)
 
 
 def add_signature_to_transaction(serialize_transaction, signature):
-    unsigned_transaction = rlp.decode(serialize_transaction, UnsignedTransaction)
+    unsigned_transaction = decode(serialize_transaction, UnsignedTransaction)
 
     v = (ord(signature[64]) if is_string(signature[64]) else signature[64]) + 27
     r = decode_big_endian_int(signature[0:32])

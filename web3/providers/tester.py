@@ -1,4 +1,4 @@
-from web3.utils.compat import (
+from ..utils.compat import (
     make_server,
     spawn,
 )

@@ -1,9 +1,9 @@
 from __future__ import absolute_import
 
-from web3.utils.encoding import (
+from .utils.encoding import (
     to_decimal,
 )
-from web3.utils.functional import (
+from .utils.functional import (
     apply_formatters_to_return,
 )
 
@@ -14,7 +14,7 @@ class Version(object):
 
     @property
     def api(self):
-        from web3 import __version__
+        from ..web3 import __version__
         return __version__
 
     @property

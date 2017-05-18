@@ -13,36 +13,36 @@ from .eth_utils import (
     compose,
 )
 
-from web3.admin import Admin
-from web3.db import Db
-from web3.eth import Eth
-from web3.miner import Miner
-from web3.net import Net
-from web3.personal import Personal
-from web3.shh import Shh
-from web3.txpool import TxPool
-from web3.version import Version
-from web3.testing import Testing
+from .admin import Admin
+from .db import Db
+from .eth import Eth
+from .miner import Miner
+from .net import Net
+from .personal import Personal
+from .shh import Shh
+from .txpool import TxPool
+from .version import Version
+from .testing import Testing
 
-from web3.iban import Iban
+from .iban import Iban
 
-from web3.providers.rpc import (
+from .providers.rpc import (
     HTTPProvider,
     RPCProvider,
     KeepAliveRPCProvider,
 )
-from web3.providers.tester import (
+from .providers.tester import (
     TestRPCProvider,
     EthereumTesterProvider,
 )
-from web3.providers.ipc import (
+from .providers.ipc import (
     IPCProvider,
 )
-from web3.providers.manager import (
+from .providers.manager import (
     RequestManager,
 )
 
-from web3.utils.encoding import (
+from .utils.encoding import (
     to_hex,
     to_decimal,
     from_decimal,

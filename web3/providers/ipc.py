@@ -14,7 +14,7 @@ from ..eth_utils import (
     force_text,
 )
 
-from web3.utils.compat import (
+from ..utils.compat import (
     Timeout,
     threading,
     socket,
@@ -27,7 +27,7 @@ from .base import JSONBaseProvider
 def get_ipc_socket(ipc_path, timeout=0.1):
     if sys.platform == 'win32':
         # On Windows named pipe is used. Simulate socket with it.
-        from web3.utils.windows import NamedPipe
+        from ..utils.windows import NamedPipe
 
         pipe = NamedPipe(ipc_path)
         with contextlib.closing(pipe):

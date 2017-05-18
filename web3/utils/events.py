@@ -8,12 +8,12 @@ from ..eth_utils import (
     event_abi_to_log_topic,
 )
 
-from eth_abi import (
+from ..eth_abi.abi import (
     decode_abi,
     decode_single,
     encode_single,
 )
-from eth_abi.abi import (
+from ..eth_abi.abi import (
     process_type,
 )
 

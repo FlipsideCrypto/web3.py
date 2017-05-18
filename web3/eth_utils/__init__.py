@@ -1,7 +1,5 @@
 from __future__ import absolute_import
 
-import pkg_resources
-
 from .abi import (  # noqa: F401
     event_abi_to_log_topic,
     event_signature_to_log_topic,
