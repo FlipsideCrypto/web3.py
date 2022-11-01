@@ -14,7 +14,7 @@ class Version(object):
 
     @property
     def api(self):
-        from ..web3 import __version__
+        from web3 import __version__
         return __version__
 
     @property

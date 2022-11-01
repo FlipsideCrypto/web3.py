@@ -3,7 +3,7 @@ from __future__ import unicode_literals
 import re
 import functools
 
-from eth_utils import (
+from .eth_utils import (
     is_string,
     coerce_args_to_text,
     pad_left,

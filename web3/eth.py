@@ -6,7 +6,7 @@ from eth_utils import (
     coerce_return_to_text,
 )
 
-import formatters
+from web3 import formatters
 from .iban import Iban
 
 from .contract import (

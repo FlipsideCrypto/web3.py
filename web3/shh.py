@@ -1,4 +1,4 @@
-from ..web3 import formatters
+from web3 import formatters
 from .utils.encoding import (
     to_decimal,
 )

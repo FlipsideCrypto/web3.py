@@ -12,16 +12,16 @@ from ..eth_utils import (
     decode_hex,
 )
 
-from decoding import (
+from ..eth_abi.decoding import (
     get_single_decoder,
     get_multi_decoder,
 )
-from encoding import (
+from ..eth_abi.encoding import (
     get_single_encoder,
     get_multi_encoder,
 )
 
-from utils.parsing import (
+from ..eth_abi.utils.parsing import (
     process_type,
 )
 

@@ -14,7 +14,7 @@ from .string import (
 
 def keccak(value):
    # print keccak_256(force_bytes(value))
-    print "%s: %s " % (value, keccak_256(force_bytes(value)))
+    # print "%s: %s " % (value, keccak_256(force_bytes(value)))
     return keccak_256(force_bytes(value))
 
 

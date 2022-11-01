@@ -1,5 +1,4 @@
 #import requests
-from google.appengine.api import urlfetch, urlfetch_stub
 
 from ...pylru import pylru
 
